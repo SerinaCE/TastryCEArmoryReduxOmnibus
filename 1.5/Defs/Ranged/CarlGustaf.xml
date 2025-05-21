@@ -4,9 +4,9 @@
 	<!-- ==================== Carl Gustaf ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_CarlGustaf</defName>
+		<defName>TA_CarlGustaf</defName>
 		<label>Carl Gustaf</label>
-		<description>Lightweight, relatively low-cost recoilless rifle that uses a wide range of ammunition, extremely flexible and suitable for a wide variety of roles. Equiped with an advanced scope that comes with a laser rangefinder and an image intensification system.</description>
+		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Guns/TA_CarlGustaf</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -4,9 +4,9 @@
 	<!-- ==================== Kord ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_KordPortable</defName>
+		<defName>TA_KordPortable</defName>
 		<label>Kord 6P50 machine gun</label>
-		<description>Ancient heavy machine gun in a portable configuration. Comes equipped with a scope.</description>
+		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Kord</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

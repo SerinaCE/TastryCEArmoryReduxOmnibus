@@ -4,9 +4,9 @@
 	<!-- ==================== MG338 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_MGThreeThreeEight</defName>
+		<defName>TA_BKS338MG</defName>
 		<label>BKS-338</label>
-		<description>Lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs.</description>
+		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/MG338</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -44,7 +44,7 @@
 				<recoilAmount>2.34</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
 				<warmupTime>1.8</warmupTime>
 				<range>81</range>
 				<soundCast>Shot_SniperRifle</soundCast>
@@ -56,7 +56,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>5</magazineSize>
 				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_338Norma</ammoSet>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
