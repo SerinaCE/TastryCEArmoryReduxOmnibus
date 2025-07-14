@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/label</xpath>
+		<value>
+			<label>MR73</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/graphicData</xpath>
+		<value>		
+			<graphicData>
+				<texPath>Weapons/Ranged/TA_MR73</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(0.78,0.78)</drawSize>
+			</graphicData>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
+		<value>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.00,1.00</DrawSize><!-- Keeping for documentation purposes -->
+				<DrawOffset>0.08,0.05</DrawOffset>
+				<DropCasingWhenReload>true</DropCasingWhenReload>
+				<AdvancedCasingVariables>true</AdvancedCasingVariables>
+				<CasingRotationRandomRange>20</CasingRotationRandomRange>
+				<!--You'll want a lower casing speed and longer casing life time for this case-->
+				<CasingOffset>-0.1,0.05</CasingOffset>
+				<CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+				<!--Reload drop casings doesn't follow aiming angle. negative 135 degrees make it eject up left.-->
+				<CasingAngleOffset>-135</CasingAngleOffset>
+				<CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases</xpath>
+		<value>			
+			<statBases>
+				<WorkToMake>5000</WorkToMake>
+				<SightsEfficiency>0.70</SightsEfficiency>
+				<ShotSpread>0.18</ShotSpread>
+				<SwayFactor>1.0</SwayFactor>
+				<Bulk>2.05</Bulk>
+				<Mass>0.95</Mass>
+				<RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/costList</xpath>
+		<value>			
+			<costList>
+				<WoodLog>5</WoodLog>
+				<Steel>20</Steel>
+				<ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs</xpath>
+		<value>			
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>3.78</recoilAmount>			
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+					<warmupTime>0.6</warmupTime>
+					<range>16</range>
+					<soundCast>Shot_Revolver</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/comps/li[@Class = "CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>				
+				<reloadTime>4.4</reloadTime>
+				<ammoSet>AmmoSet_357Magnum</ammoSet>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/comps/li[@Class = "CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+		</value>
+	</Operation>
+
+
+</Patch>

@@ -7,11 +7,16 @@
 		<description>.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>
-			<texPath>Weapons/Guns/TA_TankRifle50BMG</texPath>
+			<texPath>Weapons/Ranged/TA_TankRifle50BMG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.1,1.1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.35,0.08</DrawOffset>
+				<CasingOffset>-0.2,0.1</CasingOffset>
+			</li>
+		</modExtensions>
 		<weaponClasses>
 			<li>LongShots</li>
 			<li>RangedHeavy</li>
@@ -46,7 +51,7 @@
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
 				<warmupTime>2.40</warmupTime>
 				<range>55</range>
-				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCast>HeavyMG</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -101,11 +106,6 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.05,0.0</DrawOffset>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

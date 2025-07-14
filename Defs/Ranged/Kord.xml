@@ -10,9 +10,13 @@
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_Kord</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.25,1.25)</drawSize>
+			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.45,0.1</DrawOffset>
+			</li>
+		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -27,8 +31,8 @@
 			<RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>150</Steel>
-			<ComponentIndustrial>9</ComponentIndustrial>
+			<Steel>160</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
 			<Chemfuel>20</Chemfuel>
 		</costList>
 		<verbs>
@@ -41,7 +45,7 @@
 				<range>75</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<soundCast>Shot_CE_BattleRifle</soundCast>
+				<soundCast>HeavyMG</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
 				<targetParams>
@@ -50,10 +54,16 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
-		<comps>
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>50</magazineSize>
-				<reloadTime>7.8</reloadTime>
+				<reloadTime>8.3</reloadTime>
 				<ammoSet>AmmoSet_50BMG</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -76,7 +86,7 @@
 				<li>PrecisionRifling</li>
 			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<tools>
@@ -112,11 +122,6 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.2,0.25</DrawOffset>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

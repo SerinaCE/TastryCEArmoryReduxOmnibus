@@ -8,10 +8,22 @@
 		<label>sawed-off shotgun</label>
 		<description>A double-barrel shotgun with a cut-off barrel for easier concealment and indoor deployment in urban areas.</description>
 		<graphicData>
-			<texPath>Weapons/Guns/TA_SawedOffShotgun</texPath>
+			<texPath>Weapons/Ranged/TA_SawedOffShotgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(0.65,0.65)</drawSize>
+			<drawSize>(0.78,0.78)</drawSize>
 		</graphicData>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.0,0.0</DrawOffset>
+				<DropCasingWhenReload>true</DropCasingWhenReload>
+				<AdvancedCasingVariables>true</AdvancedCasingVariables>
+				<CasingRotationRandomRange>20</CasingRotationRandomRange>
+				<CasingOffset>-0.1,0.05</CasingOffset>
+				<CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+				<CasingAngleOffset>-135</CasingAngleOffset>
+				<CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+			</li>
+		</modExtensions>
 		<possessionCount>1</possessionCount>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<weaponClasses>
@@ -92,18 +104,6 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>-0.05,-0.05</DrawOffset>
-				<DropCasingWhenReload>true</DropCasingWhenReload>
-				<AdvancedCasingVariables>true</AdvancedCasingVariables>
-				<CasingRotationRandomRange>20</CasingRotationRandomRange>
-				<CasingOffset>-0.1,0.05</CasingOffset>
-				<CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
-				<CasingAngleOffset>-135</CasingAngleOffset>
-				<CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

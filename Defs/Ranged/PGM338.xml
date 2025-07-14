@@ -9,11 +9,16 @@
 		<description>.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>
-			<texPath>Weapons/Guns/TA_PGM338</texPath>
+			<texPath>Weapons/Ranged/TA_PGM338</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.3,0.12</DrawOffset>
+				<CasingOffset>-0.17,0.1</CasingOffset>
+			</li>
+		</modExtensions>
 		<weaponClasses>
 			<li>LongShots</li>
 			<li>RangedHeavy</li>
@@ -102,11 +107,6 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.05,0.0</DrawOffset>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

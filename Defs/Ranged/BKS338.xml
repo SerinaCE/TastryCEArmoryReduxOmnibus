@@ -8,10 +8,15 @@
 		<label>BKS-338</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/Ranged/TA_MG338</texPath>
+			<texPath>Weapons/Ranged/TA_BKS338</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.35,1.35)</drawSize>
+			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
+		<modExtensions>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.3,0.08</DrawOffset>
+			</li>
+		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -49,7 +54,13 @@
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
-		<comps>
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>50</magazineSize>
 				<reloadTime>7.8</reloadTime>
@@ -77,7 +88,7 @@
 				<li>CE_SimpleNV</li>
 			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>9</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<tools>
@@ -113,11 +124,6 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.05,0.0</DrawOffset>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

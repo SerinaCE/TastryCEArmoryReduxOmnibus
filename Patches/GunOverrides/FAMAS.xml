@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/label</xpath>
+		<value>
+			<label>FAMAS G2</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/graphicData</xpath>
+		<value>		
+			<graphicData>
+				<texPath>Weapons/Ranged/TA_FAMAS-G2</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(1.05,1.05)</drawSize>
+			</graphicData>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
+		<value>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.1,0.04</DrawOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/statBases</xpath>
+		<value>			
+			<statBases>
+				<WorkToMake>31000</WorkToMake>
+				<SightsEfficiency>1.0</SightsEfficiency>
+				<ShotSpread>0.7</ShotSpread>
+				<SwayFactor>1.14</SwayFactor>
+				<Bulk>7.6</Bulk>
+				<Mass>3.8</Mass>
+				<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/costList</xpath>
+		<value>			
+			<costList>
+				<Chemfuel>10</Chemfuel>
+				<Steel>50</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/verbs</xpath>
+		<value>			
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>1.29</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+					<warmupTime>1.0</warmupTime>
+					<range>50</range>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+					<soundCast>Shot_AssaultRifle</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/comps/li[@Class = "CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/comps/li[@Class = "CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</value>
+	</Operation>
+
+
+</Patch>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/label</xpath>
+		<value>
+			<label>Suomi KP-31</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/graphicData</xpath>
+		<value>		
+			<graphicData>
+				<texPath>Weapons/Ranged/TA_SuomiKP-31</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(0.93,0.93)</drawSize>
+			</graphicData>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
+		<value>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.1,0.08</DrawOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/statBases</xpath>
+		<value>			
+			<statBases>
+				<WorkToMake>26500</WorkToMake>
+				<SightsEfficiency>1.00</SightsEfficiency>
+				<ShotSpread>0.10</ShotSpread>
+				<SwayFactor>1.33</SwayFactor>
+				<Bulk>8.7</Bulk>
+				<Mass>4.6</Mass>
+				<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/costList</xpath>
+		<value>			
+			<costList>
+				<WoodLog>10</WoodLog>
+				<Steel>35</Steel>
+				<ComponentIndustrial>4</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/verbs</xpath>
+		<value>			
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>0.51</recoilAmount>			
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+					<warmupTime>0.6</warmupTime>
+					<range>31</range>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+					<soundCast>Shot_HeavySMG</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/comps/li[@Class = "CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>				
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/comps/li[@Class = "CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+		</value>
+	</Operation>
+
+
+</Patch>

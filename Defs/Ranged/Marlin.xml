@@ -8,7 +8,7 @@
 		<label>Marlin 1894C</label>
 		<description>Marlin 1894C. Short lever action rifle chambered in the popular .357 Magnum cartridge.</description>
 		<graphicData>
-			<texPath>Weapons/Guns/TA_Marlin357</texPath>
+			<texPath>Weapons/Ranged/TA_Marlin357</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -22,7 +22,7 @@
 			<SwayFactor>1.21</SwayFactor>
 			<Bulk>9.14</Bulk>
 			<Mass>2.95</Mass>
-			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.76</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<WoodLog>10</WoodLog>
@@ -31,10 +31,10 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.5</recoilAmount>			
+				<recoilAmount>1.2</recoilAmount>			
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_357Magnum\_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
 				<range>31</range>
 				<soundCast>Shot_BoltActionRifle</soundCast>
@@ -44,7 +44,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>10</magazineSize>				
+				<magazineSize>9</magazineSize>				
 				<reloadOneAtATime>true</reloadOneAtATime>
 				<reloadTime>0.85</reloadTime>
 				<ammoSet>AmmoSet_357Magnum</ammoSet>
@@ -95,8 +95,8 @@
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.25,1.25</DrawSize>
-				<DrawOffset>0.08,0.05</DrawOffset>
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0.15,0.08</DrawOffset>
 			</li>
 		</modExtensions>		
 	</ThingDef>

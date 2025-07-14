@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/label</xpath>
+		<value>
+			<label>Browning Hi-Power</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/graphicData</xpath>
+		<value>		
+			<graphicData>
+				<texPath>Weapons/Ranged/TA_BrowningHiPower</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(0.73,0.73)</drawSize>
+			</graphicData>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
+		<value>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.1,0.05</DrawOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/statBases</xpath>
+		<value>			
+			<statBases>
+				<WorkToMake>7000</WorkToMake>
+				<SightsEfficiency>0.70</SightsEfficiency>
+				<ShotSpread>0.17</ShotSpread>
+				<SwayFactor>0.97</SwayFactor>
+				<Bulk>2.0</Bulk>
+				<Mass>0.92</Mass>
+				<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+			</statBases>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/costList</xpath>
+		<value>			
+			<costList>
+				<Steel>25</Steel>
+				<ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/verbs</xpath>
+		<value>			
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>2.67</recoilAmount>			
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+					<warmupTime>0.6</warmupTime>
+					<range>16</range>
+					<soundCast>Shot_Revolver</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/comps/li[@Class = "CombatExtended.CompProperties_AmmoUser"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>16</magazineSize>				
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/comps/li[@Class = "CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>			
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+		</value>
+	</Operation>
+
+
+</Patch>

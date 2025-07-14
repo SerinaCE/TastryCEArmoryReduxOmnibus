@@ -1,51 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- ==================== MG338 ==================== -->
+
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TA_UKM-2000MG</defName>
-		<label>UKM 2000</label>
-		<description>Polish PKM conversion into 7.62NATO.</description>
+		<defName>TA_CETME-Ameli</defName>
+		<label>CETME Ameli</label>
+		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/Ranged/TA_UKM-2000</texPath>
+			<texPath>Weapons/Ranged/TA_CETME-Ameli</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.25,1.25)</drawSize>
+			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
 		<modExtensions>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.25,0.05</DrawOffset>
+				<DrawOffset>0.15,0.1</DrawOffset>
 			</li>
 		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			<li>RangedHeavy</li>
+			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>38500</WorkToMake>
-			<SightsEfficiency>1.00</SightsEfficiency>
-			<ShotSpread>0.06</ShotSpread>
-			<SwayFactor>1.45</SwayFactor>
-			<Bulk>14.03</Bulk>
-			<Mass>8.4</Mass>
+			<WorkToMake>36500</WorkToMake>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>1.05</SwayFactor>
+			<Bulk>11.5</Bulk>
+			<Mass>5.3</Mass>
 			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>60</Steel>
+			<Steel>65</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<Chemfuel>10</Chemfuel>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.16</recoilAmount>
+				<recoilAmount>0.92</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-				<warmupTime>1.3</warmupTime>
-				<range>62</range>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+				<warmupTime>1.35</warmupTime>
+				<range>55</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
-				<soundCast>MediumMG</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>6</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -60,9 +62,9 @@
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Biocodable"/>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>100</magazineSize>
+				<magazineSize>200</magazineSize>
 				<reloadTime>7.8</reloadTime>
-				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -70,12 +72,6 @@
 				<aimedBurstShotCount>5</aimedBurstShotCount>
 			</li>
 		</comps>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-		</recipeMaker>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
@@ -83,8 +79,17 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>CE_MachineGun</li>
 			<li>CE_AI_LMG</li>
-			<li>Bipod_SAW</li>
+			<li>Bipod_LMG</li>
 		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>stock</label>
