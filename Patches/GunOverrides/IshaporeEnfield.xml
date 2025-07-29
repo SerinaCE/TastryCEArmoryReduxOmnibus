@@ -13,7 +13,7 @@
 			<graphicData>
 				<texPath>Weapons/Ranged/TA_Ishapore2a1</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(1.45,1.45)</drawSize>
+				<drawSize>(1.42,1.42)</drawSize>
 			</graphicData>
 		</value>
 	</Operation>

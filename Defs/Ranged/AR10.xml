@@ -3,48 +3,48 @@
 
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TA_CETME-Ameli</defName>
-		<label>CETME Ameli</label>
+		<defName>TA_AR10Rifle</defName>
+		<label>AR 10</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/Ranged/TA_CETME-Ameli</texPath>
+			<texPath>Weapons/Ranged/TA_AR-10</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.1,1.1)</drawSize>
+			<drawSize>(1.17,1.17)</drawSize>
 		</graphicData>
 		<modExtensions>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.15,0.1</DrawOffset>
+				<DrawOffset>0.2,0.1</DrawOffset>
 			</li>
 		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			<li>RangedLight</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>36500</WorkToMake>
+			<WorkToMake>31000</WorkToMake>
 			<SightsEfficiency>1.0</SightsEfficiency>
-			<ShotSpread>0.09</ShotSpread>
-			<SwayFactor>1.05</SwayFactor>
-			<Bulk>11.5</Bulk>
-			<Mass>5.3</Mass>
-			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>1.43</SwayFactor>
+			<Bulk>10.5</Bulk>
+			<Mass>3.8</Mass>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>65</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 			<Chemfuel>10</Chemfuel>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>0.92</recoilAmount>
+				<recoilAmount>2.56</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-				<warmupTime>1.35</warmupTime>
+				<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
 				<range>55</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>10</burstShotCount>
-				<soundCast>Shot_AssaultRifle</soundCast>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
 				<targetParams>
@@ -55,24 +55,22 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>200</magazineSize>
-				<reloadTime>7.8</reloadTime>
-				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+				<magazineSize>20</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
-				<aiAimMode>SuppressFire</aiAimMode>
-				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
+			<li>CE_AI_AR</li>
 			<li>IndustrialGunAdvanced</li>
-			<li>CE_MachineGun</li>
-			<li>CE_AI_LMG</li>
-			<li>Bipod_LMG</li>
 		</weaponTags>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />

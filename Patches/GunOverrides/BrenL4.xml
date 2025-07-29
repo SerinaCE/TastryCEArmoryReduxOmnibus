@@ -85,7 +85,7 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiAimMode>AimedShot</aiAimMode>
+				<aiAimMode>SuppressFire</aiAimMode>
 			</li>
 		</value>
 	</Operation>
