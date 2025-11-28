@@ -21,7 +21,7 @@
 		<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
 		<value>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.3,0.1</DrawOffset>
+				<DrawOffset>0.35,0.1</DrawOffset>
 				<CasingOffset>-0.3,0.1</CasingOffset>
 			</li>
 		</value>
@@ -45,7 +45,7 @@
 		<value>			
 			<costList>
 				<WoodLog>10</WoodLog>
-				<Steel>70</Steel>
+				<Steel>55</Steel>
 				<ComponentIndustrial>1</ComponentIndustrial>
 			</costList>
 		</value>

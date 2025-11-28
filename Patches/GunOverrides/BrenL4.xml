@@ -21,7 +21,7 @@
 		<xpath>Defs/ThingDef[defName="Gun_LMG"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
 		<value>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.1,0.04</DrawOffset>
+				<DrawOffset>0.3,0.04</DrawOffset>
 			</li>
 		</value>
 	</Operation>

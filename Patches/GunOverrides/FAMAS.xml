@@ -13,7 +13,7 @@
 			<graphicData>
 				<texPath>Weapons/Ranged/TA_FAMAS-G2</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(1.05,1.05)</drawSize>
+				<drawSize>(1,1)</drawSize>
 			</graphicData>
 		</value>
 	</Operation>
@@ -21,7 +21,7 @@
 		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
 		<value>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.1,0.04</DrawOffset>
+				<DrawOffset>0.25,0.04</DrawOffset>
 			</li>
 		</value>
 	</Operation>

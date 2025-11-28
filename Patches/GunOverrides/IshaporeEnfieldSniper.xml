@@ -4,16 +4,16 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/label</xpath>
 		<value>
-			<label>FN M1949 sniper</label>
+			<label>Ishapore Enfield sporter</label>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/graphicData</xpath>
 		<value>		
 			<graphicData>
-				<texPath>Weapons/Ranged/TA_FN49-Sniper</texPath>
+				<texPath>Weapons/Ranged/TA_Ishapore2a1Sporter</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(1.35,1.35)</drawSize>
+				<drawSize>(1.42,1.42)</drawSize>
 			</graphicData>
 		</value>
 	</Operation>
@@ -21,8 +21,8 @@
 		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/modExtensions/li[@Class = "CombatExtended.GunDrawExtension"]</xpath>
 		<value>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.2,0.1</DrawOffset>
-				<CasingOffset>-0.1,0.04</CasingOffset>
+				<DrawOffset>0.35,0.1</DrawOffset>
+				<CasingOffset>-0.3,0.1</CasingOffset>
 			</li>
 		</value>
 	</Operation>
@@ -30,12 +30,12 @@
 		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/statBases</xpath>
 		<value>			
 			<statBases>
-				<WorkToMake>32000</WorkToMake>
-				<SightsEfficiency>2.6</SightsEfficiency>
-				<ShotSpread>0.05</ShotSpread>
-				<SwayFactor>1.77</SwayFactor>
+				<WorkToMake>19800</WorkToMake>
+				<SightsEfficiency>2.3</SightsEfficiency>
+				<ShotSpread>0.04</ShotSpread>
+				<SwayFactor>1.58</SwayFactor>
 				<Bulk>11.16</Bulk>
-				<Mass>5.5</Mass>
+				<Mass>4.25</Mass>
 				<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 			</statBases>
 		</value>
@@ -44,9 +44,9 @@
 		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/costList</xpath>
 		<value>			
 			<costList>
-				<Chemfuel>15</Chemfuel>
-				<Steel>65</Steel>
-				<ComponentIndustrial>5</ComponentIndustrial>
+				<WoodLog>15</WoodLog>
+				<Steel>70</Steel>
+				<ComponentIndustrial>4</ComponentIndustrial>
 			</costList>
 		</value>
 	</Operation>
@@ -60,8 +60,8 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
 					<warmupTime>1.5</warmupTime>
-					<range>81</range>
-					<soundCast>Shot_CE_BattleRifle</soundCast>
+					<range>72</range>
+					<soundCast>Shot_BoltActionRifle</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
 				</li>
@@ -73,7 +73,8 @@
 		<value>			
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>10</magazineSize>
-				<reloadTime>4</reloadTime>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
 				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
 			</li>
 		</value>

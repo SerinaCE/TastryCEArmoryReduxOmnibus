@@ -13,7 +13,7 @@
 			<graphicData>
 				<texPath>Weapons/Ranged/TA_MR73</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(0.78,0.78)</drawSize>
+				<drawSize>(0.75,0.75)</drawSize>
 			</graphicData>
 		</value>
 	</Operation>
@@ -39,7 +39,7 @@
 		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases</xpath>
 		<value>			
 			<statBases>
-				<WorkToMake>5000</WorkToMake>
+				<WorkToMake>6000</WorkToMake>
 				<SightsEfficiency>0.70</SightsEfficiency>
 				<ShotSpread>0.18</ShotSpread>
 				<SwayFactor>1.0</SwayFactor>

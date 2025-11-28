@@ -11,8 +11,13 @@
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_MicroUzi</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(0.85,0.85)</drawSize>
+			<drawSize>(0.9,0.9)</drawSize>
 		</graphicData>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.1,0.05</DrawOffset>
+			</li>
+		</modExtensions>	
 		<weaponClasses>
 			<li>RangedLight</li>
 		</weaponClasses>

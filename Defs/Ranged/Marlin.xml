@@ -16,7 +16,7 @@
 			<li>RangedLight</li>
 		</weaponClasses>		
 		<statBases>
-			<WorkToMake>9500</WorkToMake>
+			<WorkToMake>13000</WorkToMake>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.09</ShotSpread>
 			<SwayFactor>1.21</SwayFactor>
@@ -95,7 +95,7 @@
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.1,1.1</DrawSize>
+				<DrawSize>1.05,1.05</DrawSize>
 				<DrawOffset>0.15,0.08</DrawOffset>
 			</li>
 		</modExtensions>		
