@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Tasty CE Armory Redux Omnibus</name>
+	<name>Tasty CE Armory Redux</name>
 	<author>al9000</author>
 	<url></url>
-	<description>CE_Core/weapons+CE_Guns+CE_Armory.zip</description>	
+	<description>[CE_Core/weapons + CE_Guns + CE_Armory].zip</description>	
 	<supportedVersions>
 		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>al9000.TastyCEArmoryReduxOmnibus</packageId>
+	<packageId>al9000.TastyCEArmoryRedux</packageId>
 	<modDependencies>
 		<li>
 			<packageId>CETeam.CombatExtended</packageId>

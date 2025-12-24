@@ -55,7 +55,10 @@
 			</li>
 		</comps>
 		<recipeMaker>
-		<researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
 		</recipeMaker>   
 		<tools>
 			<li Class="CombatExtended.ToolCE">

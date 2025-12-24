@@ -9,7 +9,7 @@
 		<texPath>Weapons/Melee/TA_HalberdFancy</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>1.3</drawSize>
+		<drawSize>1.4</drawSize>
     </graphicData>
 	<equippedAngleOffset>45</equippedAngleOffset>
 	<techLevel>Medieval</techLevel>
@@ -36,68 +36,79 @@
 		</costList>
 		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>Metallic_Weapon</li>
 		</stuffCategories>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <Mass>2</Mass>
+		<WorkToMake>18000</WorkToMake>
+		<Mass>2</Mass>
+		<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
+		<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>
+		<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.3</VEF_MeleeWeaponRange>
     </statBases>
-		<tradeTags>
-			<li>WeaponMelee</li>
-		</tradeTags>
-		<tools>
+	<equippedStatOffsets>
+		<MeleeCritChance>0.22</MeleeCritChance>
+		<MeleeParryChance>1.53</MeleeParryChance>
+		<MeleeDodgeChance>0.67</MeleeDodgeChance>
+	</equippedStatOffsets>
+	<tradeTags>
+		<li>WeaponMelee</li>
+	</tradeTags>
+	<tools>
+		<li>
+			<label>handle</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>13</power>
+			<cooldownTime>2.6</cooldownTime>
+		</li>
 			<li>
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-					<li>Poke</li>
-				</capacities>
-				<power>13</power>
-				<cooldownTime>2.6</cooldownTime>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
+			<capacities>
+				<li>Cut</li>
+			</capacities>
+			<power>27</power>
+			<cooldownTime>2.9</cooldownTime>
+			<armorPenetration>0.3</armorPenetration>
 			</li>
-			 <li>
-				<label>head</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
-				<capacities>
-				  <li>Cut</li>
-				</capacities>
-				<power>27</power>
-				<cooldownTime>2.9</cooldownTime>
-				<armorPenetration>0.3</armorPenetration>
-			  </li>
-			  <li>
-				<label>point</label>
-				<capacities>
-				  <li>Stab</li>
-				</capacities>
-				<power>24</power>
-				<cooldownTime>2.9</cooldownTime>
-				<armorPenetration>0.3</armorPenetration>
-			  </li>
-		</tools>
-		<modExtensions>
-			<li Class="VEF.Things.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<weaponDraftedDrawOffsets>
-					<north>
-						<drawOffset>(0.34,0,0.40)</drawOffset>
-						<angleOffset>-133</angleOffset>
-					</north>
-					<east>
-						<drawOffset>(0.1,0,0.40)</drawOffset>
-						<angleOffset>-112</angleOffset>
-					</east>
-					<south>
-						<drawOffset>(-0.34,0,0.40)</drawOffset>
-						<angleOffset>-133</angleOffset>
-					</south>
-					<west>
-						<drawOffset>(-0.1,0,0.40)</drawOffset>
-						<angleOffset>112</angleOffset>
-					</west>
-				</weaponDraftedDrawOffsets>		
+			<li>
+			<label>point</label>
+			<capacities>
+				<li>Stab</li>
+			</capacities>
+			<power>24</power>
+			<cooldownTime>2.9</cooldownTime>
+			<armorPenetration>0.3</armorPenetration>
 			</li>
-		</modExtensions>
+	</tools>
+	<modExtensions>
+		<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<weaponDraftedDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.10)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</north>
+				<east>
+					<drawOffset>(0.15,0,0.10)</drawOffset>
+					<angleOffset>-122</angleOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.10)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</south>
+				<west>
+					<drawOffset>(-0.15,0,0.10)</drawOffset>
+					<angleOffset>122</angleOffset>
+				</west>
+			</weaponDraftedDrawOffsets>
+		</li>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawOffset>0.25,0.25</DrawOffset>
+		</li>
+	</modExtensions>
   </ThingDef>
 	
 </Defs>

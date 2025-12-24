@@ -31,6 +31,7 @@
 			<Bulk>13.86</Bulk>
 			<Mass>7.5</Mass>
 			<RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
+			<NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
 		</statBases>
 		<costList>
 			<Steel>75</Steel>
@@ -69,7 +70,10 @@
 			</li>
 		</comps>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>

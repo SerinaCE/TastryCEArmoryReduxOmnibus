@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef Name="BluntBase">
+    <defName>BluntRanged</defName>
+    <label>blunt</label>
+    <workerClass>DamageWorker_Blunt</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been bludgeoned to death.</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSkin>Bruise</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+    <buildingDamageFactor>0.0</buildingDamageFactor>
+    <bluntStunDuration>2.0</bluntStunDuration>
+    <bluntInnerHitChance>0.4</bluntInnerHitChance>
+    <bluntInnerHitDamageFractionToConvert>0.1~0.2</bluntInnerHitDamageFractionToConvert>
+    <bluntInnerHitDamageFractionToAdd>0.2~0.35</bluntInnerHitDamageFractionToAdd>
+    <bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+      <points>
+        <li>(0.04, 0.20)</li>
+        <li>(0.5, 1)</li>
+      </points>
+    </bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+    <bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+      <points>
+        <li>(0.4, 0)</li>
+        <li>(0.9, 0.15)</li>
+      </points>
+    </bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+  </DamageDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="357MagnumBase">
+		<defName>Ammo_357Magnum_Rubber</defName>
+		<label>.357 Magnum (Rubber)</label>
+		<generateAllowChance>0.25</generateAllowChance>
+		<graphicData>
+			<texPath>Weapons/Munitions/RevolverRubber</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.06</MarketValue>
+		</statBases>
+		<ammoClass>RubberBullet</ammoClass>
+		<cookOffProjectile>Bullet_357Magnum_Rubber</cookOffProjectile>
+	</ThingDef>
+
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="Base357MagnumBullet">
+		<defName>Bullet_357Magnum_Rubber</defName>
+		<label>.357 Magnum bullet (Rubber)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>45</speed>
+			<damageDef>BluntRanged</damageDef>		
+			<damageAmountBase>6</damageAmountBase>
+				<secondaryDamage>
+					<li>
+					  <def>Beanbag</def>
+					  <amount>3</amount>
+					</li>
+				</secondaryDamage>  			
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>3</armorPenetrationBlunt>
+			<spreadMult>1.5</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_357Magnum_Rubber</defName>
+		<label>make .357 Magnum Rubber bullet cartridge x100</label>
+		<description>Craft 100 .357 Magnum Rubber bullet cartridges.</description>
+		<jobString>Making .357 Magnum Rubber bullet cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>			
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_357Magnum_Rubber>500</Ammo_357Magnum_Rubber>
+		</products>
+		<workAmount>600</workAmount>
+	</RecipeDef>
+
+</Defs>

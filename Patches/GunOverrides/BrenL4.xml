@@ -43,7 +43,7 @@
 		<xpath>Defs/ThingDef[defName="Gun_LMG"]/costList</xpath>
 		<value>			
 			<costList>
-				<Chemfuel>10</Chemfuel>
+				<WoodLog>10</WoodLog>
 				<Steel>75</Steel>
 				<ComponentIndustrial>5</ComponentIndustrial>
 			</costList>
@@ -74,7 +74,7 @@
 		<value>			
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>30</magazineSize>
-				<reloadTime>4</reloadTime>
+				<reloadTime>3.5</reloadTime>
 				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
 			</li>
 		</value>

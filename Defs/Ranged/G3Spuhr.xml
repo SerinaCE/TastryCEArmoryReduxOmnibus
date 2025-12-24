@@ -3,13 +3,13 @@
 
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TA_G3M</defName>
-		<label>G3-M</label>
+		<defName>TA_G3Spuhr</defName>
+		<label>G3 Spuhr</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_G3Mod</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.1,1.1)</drawSize>
+			<drawSize>(1.12,1.12)</drawSize>
 		</graphicData>
 		<modExtensions>			
 			<li Class="CombatExtended.GunDrawExtension">

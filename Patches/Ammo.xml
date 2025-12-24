@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[
+			defName="AmmoSet_357Magnum" or
+			defName="AmmoSet_357Magnum_HV" or
+			defName="AmmoSet_357Magnum_Revolver" or
+			defName="AmmoSet_357Magnum_Lever"
+			]/ammoTypes</xpath>
+		<value>
+			<Ammo_357Magnum_Rubber>Bullet_357Magnum_Rubber</Ammo_357Magnum_Rubber>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DamageDef[defName="Beanbag"]/buildingDamageFactor</xpath>
+		<value>
+			<buildingDamageFactor>0</buildingDamageFactor>
+		</value>
+	</Operation>
+
+
+</Patch>

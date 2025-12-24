@@ -45,8 +45,9 @@
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>2</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
 		</recipeMaker>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">

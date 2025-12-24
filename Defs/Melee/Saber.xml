@@ -7,7 +7,6 @@
 		<graphicData>
 			<texPath>Weapons/Melee/TA_OfficerSaber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<possessionCount>1</possessionCount>
