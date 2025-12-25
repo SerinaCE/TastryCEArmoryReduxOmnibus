@@ -71,7 +71,7 @@
 			<li Class="CompProperties_Biocodable"/>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>12</magazineSize>		
-        <reloadTime>4.9</reloadTime>
+        <reloadTime>7.2</reloadTime>
         <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
