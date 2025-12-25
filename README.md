@@ -1,4 +1,4 @@
-# Tasty CE Armory Redux Omnibus
+# Tasty CE Armory Redux
 CE_Guns+CE_Armory.zip basically, for now
 
 (gun stats sheet)
