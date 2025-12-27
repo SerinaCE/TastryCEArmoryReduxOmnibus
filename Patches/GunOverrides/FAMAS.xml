@@ -105,6 +105,7 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_RifleGrenade_HEAT</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
+					<minRange>5</minRange>
 					<range>55</range>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>

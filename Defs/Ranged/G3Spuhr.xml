@@ -75,6 +75,7 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_RifleGrenade_HEAT</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
+					<minRange>5</minRange>
 					<range>55</range>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
@@ -101,6 +102,7 @@
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
 				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>7</Crafting>
