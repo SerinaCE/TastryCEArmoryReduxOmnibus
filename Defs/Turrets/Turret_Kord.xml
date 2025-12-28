@@ -26,7 +26,7 @@
 				<range>86</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
-				<soundCast>HeavyMG</soundCast>
+				<soundCast>50Cal_Browning</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<recoilPattern>Mounted</recoilPattern>
@@ -38,7 +38,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>50</magazineSize>
-				<reloadTime>7.8</reloadTime>
+				<reloadTime>6.8</reloadTime>
 				<ammoSet>AmmoSet_50BMG</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -50,8 +50,7 @@
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
 		<defName>TA_Turret_KordMG</defName>
-		<label>Kord heavy machine gun emplacement</label>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<label>Kord HMG</label>
 		<graphicData>
 			<texPath>Building/Security/TA_Kord_base</texPath>
 			<drawSize>(2,2)</drawSize>
@@ -62,6 +61,7 @@
 		</graphicData>
 		<uiIconPath>Building/Security/TA_Kord_ico</uiIconPath>
 		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
 			<Mass>50</Mass>
 			<Bulk>30</Bulk>
@@ -69,6 +69,7 @@
 		<description>heavy machine gun mounted on a tripod.</description>
 		<costList>
 			<TA_KordPortable>1</TA_KordPortable>
+			<TA_Tripod>1</TA_Tripod>
 		</costList>
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<building>
@@ -80,10 +81,7 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<researchPrerequisites>
-			<li>PrecisionRifling</li>
-		</researchPrerequisites>
+		<thingCategories Inherit="False"/>
 	</ThingDef>
 
 </Defs>

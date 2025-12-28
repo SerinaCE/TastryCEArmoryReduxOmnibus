@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>TA_LG1howitzer_package</defName>
+    <label>GIAT LG-1 howitzer package</label>
+    <description>LG-1 howitzer packed up ready for transport. Depolyable into artillery or field gun configuration.</description>
+    <graphicData>
+      <texPath>Building/Security/TA_GIAT-LG1_buildkit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+			<WorkToMake>100000</WorkToMake>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>2000</MarketValue>
+      <Mass>320</Mass> <!--towed approximation-->
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+		<costList>
+			<Steel>650</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<ComponentIndustrial>7</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+				<Steel>400</Steel>
+			</costList>
+		</costListForDifficulty>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+			<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTurretGun</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+	
+</Defs>

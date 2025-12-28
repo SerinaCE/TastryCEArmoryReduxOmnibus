@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Turret_Mortar"]</xpath>
+			<value>
+				<graphicData>
+					<drawSize>(2,2)</drawSize>
+				</graphicData>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Turret_Mortar"]</xpath>
+			<value>
+				<interactionCellOffset>(0,0,0)</interactionCellOffset>
+			</value>
+	</Operation>
+
+
+</Patch>

@@ -38,6 +38,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="357MagnumBase">
 		<defName>Ammo_357Magnum_Rubber</defName>
 		<label>.357 Magnum (Rubber)</label>
+		<description>Good for training.</description>
 		<generateAllowChance>0.25</generateAllowChance>
 		<graphicData>
 			<texPath>Weapons/Munitions/RevolverRubber</texPath>

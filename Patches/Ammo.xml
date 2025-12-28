@@ -20,5 +20,12 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="CE_GrenadeLauncher"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
+		<value>
+			<DrawSize>0.93,0.93</DrawSize>
+			<DrawOffset>0.2,0.0</DrawOffset>
+		</value>
+	</Operation>
 
 </Patch>

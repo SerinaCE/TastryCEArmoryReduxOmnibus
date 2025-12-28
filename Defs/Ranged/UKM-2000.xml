@@ -12,7 +12,7 @@
 		</graphicData>
 		<modExtensions>			
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.25,0.05</DrawOffset>
+				<DrawOffset>0.3,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>

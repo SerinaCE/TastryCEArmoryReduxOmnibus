@@ -5,7 +5,6 @@
 	<url></url>
 	<description>[CE_Core/weapons + CE_Guns + CE_Armory].zip</description>	
 	<supportedVersions>
-		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
 	<packageId>al9000.TastyCEArmoryRedux</packageId>

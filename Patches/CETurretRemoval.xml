@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+			defName="Turret_KPV" or
+			defName="Turret_M240B" or
+			defName="Turret_AGSThirty" or
+			defName="Turret_Flak"
+			]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+			defName="Gun_KPV" or
+			defName="Gun_M240B" or
+			defName="Gun_AGSThirty" or
+			defName="Gun_FlakTurret"
+			]</xpath>
+	</Operation>
+
+
+</Patch>

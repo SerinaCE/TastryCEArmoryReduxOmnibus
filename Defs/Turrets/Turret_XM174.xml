@@ -58,22 +58,21 @@
 
   <ThingDef ParentName="TurretMannedBuildableBase">
     <defName>TA_Turret_XM174MGL</defName>
-    <label>XM174</label>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <label>XM174 MGL</label>
     <graphicData>
       <texPath>Building/Security/TA_XM174_base</texPath>
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <uiIconPath>Building/Security/TA_XM174_ico</uiIconPath>
     <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>100</WorkToBuild>
+			<WorkToBuild>100</WorkToBuild>
       <Mass>8.12</Mass>
       <Bulk>15</Bulk>
     </statBases>
     <description>Lightweight 40mm automatic grenade launcher.</description>
     <costList>
       <TA_XM174MGL>1</TA_XM174MGL>
+			<TA_Tripod>1</TA_Tripod>
     </costList>
     <building>
       <turretGunDef>TA_XM174MGL_mounted</turretGunDef>
@@ -84,10 +83,7 @@
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <researchPrerequisites>
-      <li>CE_Launchers</li>
-    </researchPrerequisites>
-    <minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories Inherit="False"/>
   </ThingDef>  
 
 </Defs>

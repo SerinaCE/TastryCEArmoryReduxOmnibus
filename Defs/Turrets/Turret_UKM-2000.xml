@@ -50,8 +50,7 @@
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
 		<defName>TA_Turret_UKM-2000MG</defName>
-		<label>UKM-2000 light machine gun emplacement</label>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<label>UKM-2000 MMG</label>
 		<graphicData>
 			<texPath>Building/Security/TA_UKM-2000_base</texPath>
 			<drawSize>(2,2)</drawSize>
@@ -69,6 +68,7 @@
 		<description>light machine gun mounted on a tripod.</description>
 		<costList>
 			<TA_UKM-2000MG>1</TA_UKM-2000MG>
+			<TA_Tripod>1</TA_Tripod>
 		</costList>
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<building>
@@ -80,10 +80,7 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<researchPrerequisites>
-			<li>PrecisionRifling</li>
-		</researchPrerequisites>
+		<thingCategories Inherit="False"/>
 	</ThingDef>
 
 </Defs>
