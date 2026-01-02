@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BaseMakeableGun">
 		<defName>TA_FN1949rifle</defName>
-		<label>FN M1949</label>
+		<label>FN M1949 battle rifle</label>
 		<description>Magazine fed semi-automatic battle rifle fitted with bayonet.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_FN49</texPath>

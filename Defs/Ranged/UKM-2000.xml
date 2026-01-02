@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_UKM-2000MG</defName>
-		<label>UKM 2000</label>
+		<label>UKM 2000 machine gun</label>
 		<description>Polish PKM conversion into 7.62NATO.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_UKM-2000</texPath>

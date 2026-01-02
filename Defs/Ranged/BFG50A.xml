@@ -4,7 +4,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_BFG-50A</defName>
-		<label>BFG-50A</label>
+		<label>BFG-50A anti-materiel rifle</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_BFG-50A</texPath>
@@ -44,6 +44,7 @@
 				<soundCast>autocannon_slow</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>

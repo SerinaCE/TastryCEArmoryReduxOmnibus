@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_KordPortable</defName>
-		<label>Kord 6P50 machine gun</label>
+		<label>Kord heavy machine gun</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_Kord</texPath>

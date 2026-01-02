@@ -2,8 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[
-			defName="Turret_Mortar"]</xpath>
+		<xpath>Defs/ThingDef[defName="Turret_Mortar"]</xpath>
 			<value>
 				<graphicData>
 					<drawSize>(2,2)</drawSize>
@@ -12,11 +11,18 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[
-			defName="Turret_Mortar"]</xpath>
+		<xpath>Defs/ThingDef[defName="Turret_Mortar"]</xpath>
 			<value>
 				<interactionCellOffset>(0,0,0)</interactionCellOffset>
 			</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Artillery_Mortar"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/minRange</xpath>
+		<value>
+			<minRange>20</minRange>
+		</value>
 	</Operation>
 
 

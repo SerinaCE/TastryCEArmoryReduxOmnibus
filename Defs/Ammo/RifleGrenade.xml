@@ -188,8 +188,8 @@
 
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
 		<defName>MakeAmmo_RifleGrenade_HE</defName>
-		<label>make rifle grenade HE grenades x100</label>
-		<description>Craft 100 rifle grenade HE grenades.</description>
+		<label>make rifle grenade HE grenades x5</label>
+		<description>Craft 5 rifle grenade HE grenades.</description>
 		<jobString>Making rifle grenade HE grenades.</jobString>
 		<ingredients>
 			<li>
@@ -198,51 +198,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>50</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>FSX</li>
-					</thingDefs>
-				</filter>
-				<count>8</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-				<li>FSX</li>
-				<li>ComponentIndustrial</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Ammo_RifleGrenade_HE>100</Ammo_RifleGrenade_HE>
-		</products>
-		<workAmount>9400</workAmount>
-	</RecipeDef>
-
-	<RecipeDef ParentName="LauncherAmmoRecipeBase">
-		<defName>MakeAmmo_RifleGrenade_HEAT</defName>
-		<label>make rifle grenade HEAT grenades x100</label>
-		<description>Craft 100 rifle grenade HEAT grenades.</description>
-		<jobString>Making rifle grenade HEAT grenades.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>50</count>
+				<count>16</count>
 			</li>
 			<li>
 				<filter>
@@ -269,9 +225,53 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_RifleGrenade_HEAT>100</Ammo_RifleGrenade_HEAT>
+			<Ammo_RifleGrenade_HE>5</Ammo_RifleGrenade_HE>
 		</products>
-		<workAmount>8600</workAmount>
+		<workAmount>5200</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="LauncherAmmoRecipeBase">
+		<defName>MakeAmmo_RifleGrenade_HEAT</defName>
+		<label>make rifle grenade HEAT grenades x5</label>
+		<description>Craft 5 rifle grenade HEAT grenades.</description>
+		<jobString>Making rifle grenade HEAT grenades.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_RifleGrenade_HEAT>5</Ammo_RifleGrenade_HEAT>
+		</products>
+		<workAmount>5200</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
@@ -290,7 +290,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>50</count>
+				<count>16</count>
 			</li>
 			<li>
 				<filter>
@@ -298,7 +298,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>11</count>
+				<count>7</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -308,9 +308,9 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_RifleGrenade_EMP>100</Ammo_RifleGrenade_EMP>
+			<Ammo_RifleGrenade_EMP>5</Ammo_RifleGrenade_EMP>
 		</products>
-		<workAmount>11600</workAmount>
+		<workAmount>7000</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
@@ -325,7 +325,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>50</count>
+				<count>16</count>
 			</li>
 			<li>
 				<filter>
@@ -333,7 +333,7 @@
 						<li>Prometheum</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -352,9 +352,9 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_RifleGrenade_Smoke>100</Ammo_RifleGrenade_Smoke>
+			<Ammo_RifleGrenade_Smoke>5</Ammo_RifleGrenade_Smoke>
 		</products>
-		<workAmount>7400</workAmount>
+		<workAmount>3600</workAmount>
 	</RecipeDef>
 
 </Defs>

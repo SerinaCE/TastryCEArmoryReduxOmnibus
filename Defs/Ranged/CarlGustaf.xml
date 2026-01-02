@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_CarlGustaf</defName>
-		<label>Carl Gustaf</label>
+		<label>Carl Gustaf recoilless rifle</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_CarlGustaf</texPath>

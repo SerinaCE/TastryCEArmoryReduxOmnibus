@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/label</xpath>
 		<value>
-			<label>SPAS-12</label>
+			<label>SPAS-12 automatic shotgun</label>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">

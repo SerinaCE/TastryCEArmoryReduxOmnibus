@@ -4,7 +4,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_CETME-Ameli</defName>
-		<label>CETME Ameli</label>
+		<label>CETME Ameli squad automatic weapon</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_CETME-Ameli</texPath>

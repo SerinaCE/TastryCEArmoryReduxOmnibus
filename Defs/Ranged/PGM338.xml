@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_PGM338SR</defName>
-		<label>PGM .338</label>
+		<label>PGM .338 sniper rifle</label>
 		<description>.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>

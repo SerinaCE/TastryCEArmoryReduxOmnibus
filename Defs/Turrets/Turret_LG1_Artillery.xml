@@ -4,11 +4,10 @@
 	<!-- === Base === -->
 	<ThingDef ParentName="BaseArtilleryBuilding">
 		<defName>TA_Turret_LG1howitzer_Artillery</defName>
-		<label>GIAT LG-1 field gun</label>
+		<label>LG-1 artillery</label>
 		<description>A high caliber, relatively compact field artillery piece for indirect fire at extended ranges.</description>
 		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
 		<uiIconPath>Building/Security/TA_GIAT-LG1_Artillery</uiIconPath>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
 			<texPath>Building/Security/TA_GIAT-LG1_base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -21,8 +20,10 @@
 			<Mass>1520</Mass>
 			<Bulk>1000</Bulk>
 		</statBases>
+		<constructionSkillPrerequisite Inherit="False"/>
+		<stuffCategories Inherit="False"/>
 		<costStuffCount Inherit="False"/>
-		<costList>
+		<costList Inherit="False">
 			<TA_LG1howitzer_package>1</TA_LG1howitzer_package>
 		</costList>
 		<building>
@@ -39,7 +40,6 @@
 		</placeWorkers>
 		<size>(3,3)</size>
 		<fillPercent>0.85</fillPercent>
-		<stuffCategories Inherit="False" />
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
@@ -50,7 +50,7 @@
 	<!-- === gun === -->
 	<ThingDef ParentName="BaseArtilleryWeapon">
 		<defName>TA_LG1howitzer_gun_indirect</defName>
-		<label>LG-1 Field Gun</label>
+		<label>LG-1 artillery</label>
 		<graphicData>
 			<texPath>Building/Security/TA_GIAT-LG1_gun_indirect</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

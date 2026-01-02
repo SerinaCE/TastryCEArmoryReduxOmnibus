@@ -5,7 +5,7 @@
 
  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TA_XM174MGL</defName>
-    <label>XM174</label>
+    <label>XM174 automatic grenade launcher</label>
     <description>Lightweight 40mm automatic grenade launcher.</description>
     <graphicData>
       <texPath>Weapons/Ranged/TA_XM174</texPath>
@@ -57,7 +57,7 @@
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
       </targetParams>
-      <soundCast>InfernoCannon_Fire</soundCast>
+      <soundCast>Shot_GL</soundCast>
       <muzzleFlashScale>6</muzzleFlashScale>
       <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>

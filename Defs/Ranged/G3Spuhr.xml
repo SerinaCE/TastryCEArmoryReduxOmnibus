@@ -4,7 +4,7 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TA_G3Spuhr</defName>
-		<label>G3 Spuhr</label>
+		<label>G3 Spuhr battle rifle</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_G3Mod</texPath>
