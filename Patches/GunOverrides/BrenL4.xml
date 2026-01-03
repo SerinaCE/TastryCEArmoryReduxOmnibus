@@ -76,6 +76,7 @@
 				<magazineSize>30</magazineSize>
 				<reloadTime>3.5</reloadTime>
 				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+				<AmmoGenPerMagOverride>40</AmmoGenPerMagOverride>
 			</li>
 		</value>
 	</Operation>
