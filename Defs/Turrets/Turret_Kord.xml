@@ -25,7 +25,7 @@
 				<warmupTime>1.5</warmupTime>
 				<range>86</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>10</burstShotCount>
+				<burstShotCount>7</burstShotCount>
 				<soundCast>50Cal_Browning</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -42,7 +42,7 @@
 				<ammoSet>AmmoSet_50BMG</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiAimMode>SuppressFire</aiAimMode>
 			</li>
 		</comps>

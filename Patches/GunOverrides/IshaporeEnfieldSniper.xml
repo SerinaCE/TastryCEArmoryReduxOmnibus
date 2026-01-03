@@ -35,7 +35,7 @@
 				<ShotSpread>0.04</ShotSpread>
 				<SwayFactor>1.58</SwayFactor>
 				<Bulk>11.16</Bulk>
-				<Mass>4.25</Mass>
+				<Mass>4.5</Mass>
 				<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 			</statBases>
 		</value>
@@ -60,7 +60,7 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
 					<warmupTime>1.5</warmupTime>
-					<range>72</range>
+					<range>70</range>
 					<soundCast>Shot_BoltActionRifle</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
@@ -87,6 +87,22 @@
 			</li>
 		</value>
 	</Operation>
-
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>GasOperation</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>CE_AI_SR</li>
+				<li>SniperRifle</li>
+			</weaponTags>
+		</value>
+	</Operation>
 
 </Patch>
