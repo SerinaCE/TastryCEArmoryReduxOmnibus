@@ -31,7 +31,7 @@
 			<statBases>
 				<WorkToMake>31000</WorkToMake>
 				<SightsEfficiency>1.0</SightsEfficiency>
-				<ShotSpread>0.7</ShotSpread>
+				<ShotSpread>0.07</ShotSpread>
 				<SwayFactor>1.14</SwayFactor>
 				<Bulk>7.6</Bulk>
 				<Mass>3.8</Mass>
