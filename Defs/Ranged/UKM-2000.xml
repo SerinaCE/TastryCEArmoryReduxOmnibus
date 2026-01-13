@@ -63,12 +63,12 @@
 				<magazineSize>100</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+				<AmmoGenPerMagOverride>50</AmmoGenPerMagOverride>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>SuppressFire</aiAimMode>
 				<aimedBurstShotCount>5</aimedBurstShotCount>
-				<AmmoGenPerMagOverride>50</AmmoGenPerMagOverride>
 			</li>
 		</comps>
 		<recipeMaker>

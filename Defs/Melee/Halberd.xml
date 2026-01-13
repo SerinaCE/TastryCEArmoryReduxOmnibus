@@ -55,34 +55,40 @@
 		<li>WeaponMelee</li>
 	</tradeTags>
 	<tools>
-		<li>
-			<label>handle</label>
+		<li Class="CombatExtended.ToolCE">
+			<label>shaft</label>
 			<capacities>
 				<li>Blunt</li>
-				<li>Poke</li>
 			</capacities>
-			<power>13</power>
-			<cooldownTime>2.6</cooldownTime>
+			<power>6</power>
+			<cooldownTime>1.31</cooldownTime>
+			<armorPenetrationBlunt>2.025</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
 		</li>
-			<li>
-			<label>head</label>
-			<labelUsedInLogging>false</labelUsedInLogging>
+		<li Class="CombatExtended.ToolCE">
+			<label>edge</label>
 			<capacities>
 				<li>Cut</li>
 			</capacities>
-			<power>27</power>
-			<cooldownTime>2.9</cooldownTime>
-			<armorPenetration>0.3</armorPenetration>
-			</li>
-			<li>
+			<power>30</power>
+			<cooldownTime>2.5</cooldownTime>
+			<chanceFactor>1.165</chanceFactor>
+			<armorPenetrationBlunt>8.1</armorPenetrationBlunt>
+			<armorPenetrationSharp>1.62</armorPenetrationSharp>
+			<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
 			<label>point</label>
 			<capacities>
 				<li>Stab</li>
 			</capacities>
-			<power>24</power>
-			<cooldownTime>2.9</cooldownTime>
-			<armorPenetration>0.3</armorPenetration>
-			</li>
+			<power>25</power>
+			<cooldownTime>1.16</cooldownTime>
+			<chanceFactor>1.165</chanceFactor>
+			<armorPenetrationBlunt>2.025</armorPenetrationBlunt>
+			<armorPenetrationSharp>2.03</armorPenetrationSharp>
+			<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+		</li>
 	</tools>
 	<modExtensions>
 		<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
