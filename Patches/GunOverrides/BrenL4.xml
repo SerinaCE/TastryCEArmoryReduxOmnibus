@@ -70,24 +70,27 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Gun_LMG"]/comps/li[@Class = "CombatExtended.CompProperties_AmmoUser"]</xpath>
-		<value>			
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>30</magazineSize>
-				<reloadTime>3.5</reloadTime>
-				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
-				<AmmoGenPerMagOverride>40</AmmoGenPerMagOverride>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Gun_LMG"]/comps/li[@Class = "CombatExtended.CompProperties_FireModes"]</xpath>
-		<value>			
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aimedBurstShotCount>3</aimedBurstShotCount>
-				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiAimMode>SuppressFire</aiAimMode>
-			</li>
+		<xpath>Defs/ThingDef[defName="Gun_LMG"]/comps</xpath>
+		<value>
+			<comps Inherit="False">
+				<li Class="CompProperties_Forbiddable"/>
+				<li>
+					<compClass>CompEquippable</compClass>
+				</li>
+				<li Class="CompProperties_Styleable"/>
+				<li Class="CompProperties_Biocodable"/>		
+				<li Class="CombatExtended.CompProperties_AmmoUser">
+					<magazineSize>30</magazineSize>
+					<reloadTime>3.5</reloadTime>
+					<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+					<AmmoGenPerMagOverride>40</AmmoGenPerMagOverride>
+				</li>			
+				<li Class="CombatExtended.CompProperties_FireModes">
+					<aimedBurstShotCount>3</aimedBurstShotCount>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>SuppressFire</aiAimMode>
+				</li>
+			</comps>
 		</value>
 	</Operation>
 

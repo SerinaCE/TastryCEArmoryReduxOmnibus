@@ -4,46 +4,46 @@
 	<!-- ==================== Marlin 1894c ==================== -->
 
 	<ThingDef ParentName="BaseMakeableGun">
-		<defName>TA_FN1949rifle</defName>
-		<label>FN M1949 battle rifle</label>
+		<defName>TA_Mini14carbine</defName>
+		<label>Ruger Mini-14 carbine</label>
 		<description>Magazine fed semi-automatic battle rifle fitted with bayonet.</description>
 		<graphicData>
-			<texPath>Weapons/Ranged/TA_FN49</texPath>
+			<texPath>Weapons/Ranged/TA_Mini14</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(1.35,1.35)</drawSize>
+				<drawSize>(1.0,1.0)</drawSize>
 		</graphicData>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.25,0.08</DrawOffset>
+				<DrawOffset>0.12,0.08</DrawOffset>
 			</li>
 		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 	    <weaponClasses>
-			<li>RangedHeavy</li>
+			<li>RangedLight</li>
 		</weaponClasses>		
 		<statBases>
 			<WorkToMake>19500</WorkToMake>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>1.55</SwayFactor>
-			<Bulk>11.14</Bulk>
-			<Mass>4.31</Mass>
+			<SwayFactor>1.28</SwayFactor>
+			<Bulk>8</Bulk>
+			<Mass>3.1</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<WoodLog>10</WoodLog>
-			<Steel>55</Steel>
+			<WoodLog>5</WoodLog>
+			<Steel>50</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.26</recoilAmount>			
+				<recoilAmount>1.52</recoilAmount>			
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
-				<range>55</range>
-				<soundCast>Shot_CE_BattleRifle</soundCast>
+				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>50</range>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -52,38 +52,11 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>20</magazineSize>			
 				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
-			</li>
-			<li Class="CombatExtended.CompProperties_UnderBarrel">
-				<propsUnderBarrel>
-					<magazineSize>1</magazineSize>
-					<reloadTime>4</reloadTime>
-					<ammoSet>AmmoSet_RifleGrenade</ammoSet>
-				</propsUnderBarrel>
-				<verbPropsUnderBarrel>
-					<recoilAmount>9.2</recoilAmount>
-					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_RifleGrenade_HEAT</defaultProjectile>
-					<warmupTime>1.1</warmupTime>
-					<minRange>5</minRange>
-					<range>55</range>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
-					<soundCast>InfernoCannon_Fire</soundCast>
-					<soundCastTail>GunTail_Medium</soundCastTail>
-					<muzzleFlashScale>9</muzzleFlashScale>
-				</verbPropsUnderBarrel>
-				<propsFireModesUnderBarrel>
-					<aiUseBurstMode>FALSE</aiUseBurstMode>
-					<aiAimMode>AimedShot</aiAimMode>
-					<aimedBurstShotCount>1</aimedBurstShotCount>
-				</propsFireModesUnderBarrel>
 			</li>
 		</comps>
 		<recipeMaker>
@@ -115,21 +88,18 @@
 				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
-				<label>bayonet</label>
+				<label>muzzle</label>
 				<capacities>
-					<li>Stab</li>
+					<li>Poke</li>
 				</capacities>
-				<power>15</power>
+				<power>8</power>
 				<cooldownTime>1.55</cooldownTime>
-				<chanceFactor>1.5</chanceFactor>
-				<armorPenetrationSharp>1.11</armorPenetrationSharp>
 				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		<weaponTags>
-			<li>CE_AI_SR</li>
-			<li>NoSwitch</li>	 
+			<li>CE_AI_AR</li> 
 		</weaponTags>		
 	</ThingDef>
 	
