@@ -21,6 +21,7 @@
 			<li>LongShots</li>
 			<li>RangedHeavy</li>
 		</weaponClasses>
+		<generateCommonality>0.25</generateCommonality>
 		<statBases>
 			<WorkToMake>18500</WorkToMake>
 			<SightsEfficiency>1.0</SightsEfficiency>
