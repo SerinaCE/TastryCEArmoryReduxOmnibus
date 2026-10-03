@@ -74,7 +74,7 @@
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
 				<li>CE_Launchers</li>
-				<li>CE_AdvancedNV</li>
+				<li>CE_SimpleNV</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>

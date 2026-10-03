@@ -36,7 +36,12 @@
 			</costList>
 		</costListForDifficulty>
 		<recipeMaker>
-      <targetCountAdjustment>1</targetCountAdjustment>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>CE_TurretHeavyWeapons</li>
+				<li>Mortars</li>
+			</researchPrerequisites>
+			<targetCountAdjustment>1</targetCountAdjustment>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
