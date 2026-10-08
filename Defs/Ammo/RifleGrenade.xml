@@ -276,7 +276,7 @@
 
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
 		<defName>MakeAmmo_RifleGrenade_EMP</defName>
-		<label>make rifle grenade EMP grenades x100</label>
+		<label>make rifle grenade EMP grenades x5</label>
 		<description>Craft 100 rifle grenade EMP grenades.</description>
 		<jobString>Making rifle grenade EMP grenades.</jobString>
 		<researchPrerequisites>
@@ -315,7 +315,7 @@
 
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
 		<defName>MakeAmmo_RifleGrenade_Smoke</defName>
-		<label>make rifle grenade smoke grenades x100</label>
+		<label>make rifle grenade smoke grenades x5</label>
 		<description>Craft 100 rifle grenade smoke grenades.</description>
 		<jobString>Making rifle grenade smoke grenades.</jobString>
 		<ingredients>
